@@ -17,3 +17,4 @@ Distortion: k1 = 0.002665, k2 = 0.428448,
 cameraMatrix = np.array([[1409.938, 0, 662.269], [0, 1419.420, 422.195], [0, 0, 1]])
 dist_coeffs = np.zeros((4,1))
 
+calliberation 사진을 프린터 후 약 20장 이상 찍어서 pics 폴더에 저장하세요 CODE에서 17번째 줄 ('pics/*.PNG') 부분이 이미지 이름입니다.
