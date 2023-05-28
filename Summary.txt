@@ -1,0 +1,19 @@
+우분투 18.04에 openCV 설치하기
+
+-마커 이미지 
+https://chev.me/arucogen/
+
+-openCV 설치 (터미널에 입력)
+pip install opencv-python opencv-contrib-python numpy
+python -m pip install --upgrade pip
+python -m pip install opencv-python
+
+추정치 
+Focal length: fx = 833.161 fy = 835.984
+Principal point: cx = 277.021 cy = 259.754
+Distortion: k1 = 0.002665, k2 = 0.428448,
+ p1 = -0.002682, p2 = -0.018786 (k1,k2: radial distortion 계수, p1,p2: tangential distortion 계수)
+
+cameraMatrix = np.array([[1409.938, 0, 662.269], [0, 1419.420, 422.195], [0, 0, 1]])
+dist_coeffs = np.zeros((4,1))
+
